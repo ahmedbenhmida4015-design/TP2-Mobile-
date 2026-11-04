@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,14 +21,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        Btnconsulter=findViewById(R.id.Btnconsulter);
-        msg=findViewById(R.id.msg);
-        Btnconsulter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                msg.setText("Félicitation ");
-            }
-        });
+        Btnconsulter = findViewById(R.id.Btnconsulter);
+//        msg=findViewById(R.id.msg);
+//        Btnconsulter.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                msg.setText("Félicitation ");
+//            }
+        // });
+    }
+        public void calculer(View view)
+        {
+            Toast.makeText(this, "le bouton consulter a ete cliquer", Toast.LENGTH_SHORT).show();
+        }
 
     }
-}
